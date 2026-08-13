@@ -38,6 +38,11 @@ This was an easy modification because it only required changing values in `np.li
 
 ## Phase 5. Custom Project
 
+For Phase 5, I copied `ml_07_sailors_p4.ipynb` and renamed it `ml_07_sailors_p5.ipynb`.
+I kept the workflow while also testing `body_mass_g` and `flipper_length_mm`.
+
+- `body_mass_g` sweep
+
 Describe your custom investigation of the deployed model.
 
 Be specific about what changed from the example project.
