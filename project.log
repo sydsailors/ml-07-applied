@@ -1090,3 +1090,513 @@ dtype: int64
 2026-08-13 10:12:15 | INFO | M07 | ========================
 2026-08-13 10:12:15 | INFO | M07 | API endpoint: https://ml-penguin-predictor.onrender.com/predict
 2026-08-13 10:12:15 | INFO | M07 | ========================
+2026-08-13 15:37:17 | INFO | M07 | === RUN START ===
+2026-08-13 15:37:17 | INFO | M07 | project=M07
+2026-08-13 15:37:17 | INFO | M07 | repo_dir=ml-07-applied
+2026-08-13 15:37:17 | INFO | M07 | python=3.14.5
+2026-08-13 15:37:17 | INFO | M07 | os=Darwin 20.6.0
+2026-08-13 15:37:17 | INFO | M07 | shell=zsh
+2026-08-13 15:37:17 | INFO | M07 | cwd=notebooks
+2026-08-13 15:37:17 | INFO | M07 | github_actions=False
+2026-08-13 15:37:17 | INFO | M07 | Confirming installation:
+2026-08-13 15:37:17 | INFO | M07 |   python:       3.14.5
+2026-08-13 15:37:17 | INFO | M07 |   pandas:       3.0.5
+2026-08-13 15:37:17 | INFO | M07 |   numpy:        2.5.2
+2026-08-13 15:37:17 | INFO | M07 |   matplotlib:   3.11.1
+2026-08-13 15:37:17 | INFO | M07 |   seaborn:      0.13.2
+2026-08-13 15:37:17 | INFO | M07 |   requests:     2.34.2
+2026-08-13 15:37:17 | INFO | M07 | API endpoint: https://ml-penguin-predictor.onrender.com/predict
+2026-08-13 15:37:46 | INFO | M07 | Baseline predictions:
+2026-08-13 15:37:46 | INFO | M07 |   expected=Adelie     got=Adelie     [OK]
+2026-08-13 15:37:47 | INFO | M07 |   expected=Chinstrap  got=Chinstrap  [OK]
+2026-08-13 15:37:47 | INFO | M07 |   expected=Gentoo     got=Gentoo     [OK]
+2026-08-13 15:37:57 | INFO | M07 | body_mass_g sweep:
+2026-08-13 15:37:57 | INFO | M07 |  body_mass_g prediction
+ 2500.000000     Adelie
+ 2620.689655     Adelie
+ 2741.379310     Adelie
+ 2862.068966     Adelie
+ 2982.758621     Adelie
+ 3103.448276     Adelie
+ 3224.137931     Adelie
+ 3344.827586     Adelie
+ 3465.517241     Adelie
+ 3586.206897     Adelie
+ 3706.896552     Adelie
+ 3827.586207     Adelie
+ 3948.275862     Adelie
+ 4068.965517     Adelie
+ 4189.655172     Adelie
+ 4310.344828     Adelie
+ 4431.034483     Adelie
+ 4551.724138     Adelie
+ 4672.413793     Adelie
+ 4793.103448     Adelie
+ 4913.793103     Adelie
+ 5034.482759     Adelie
+ 5155.172414     Adelie
+ 5275.862069     Adelie
+ 5396.551724     Adelie
+ 5517.241379     Adelie
+ 5637.931034     Adelie
+ 5758.620690     Adelie
+ 5879.310345     Adelie
+ 6000.000000     Adelie
+2026-08-13 15:37:57 | INFO | M07 | ANALYST CHOICE: Where does the prediction shift and does that match your expectation?
+2026-08-13 15:43:41 | INFO | M07 | flipper_length_mm sweep:
+2026-08-13 15:43:41 | INFO | M07 |  flipper_length_mm prediction
+        170.000000     Adelie
+        172.068966     Adelie
+        174.137931     Adelie
+        176.206897     Adelie
+        178.275862     Adelie
+        180.344828     Adelie
+        182.413793     Adelie
+        184.482759     Adelie
+        186.551724     Adelie
+        188.620690     Adelie
+        190.689655     Adelie
+        192.758621     Adelie
+        194.827586     Adelie
+        196.896552     Adelie
+        198.965517     Adelie
+        201.034483     Adelie
+        203.103448     Adelie
+        205.172414     Adelie
+        207.241379     Adelie
+        209.310345     Adelie
+        211.379310     Adelie
+        213.448276     Adelie
+        215.517241     Adelie
+        217.586207     Adelie
+        219.655172     Adelie
+        221.724138     Adelie
+        223.793103     Adelie
+        225.862069     Adelie
+        227.931034     Adelie
+        230.000000     Adelie
+2026-08-13 15:43:41 | INFO | M07 | ANALYST CHOICE: Where does the prediction shift and does that match your expectation?
+2026-08-13 15:47:29 | INFO | M07 | flipper_length_mm sweep:
+2026-08-13 15:47:29 | INFO | M07 |  flipper_length_mm prediction
+        250.000000     Adelie
+        254.310345     Adelie
+        258.620690     Adelie
+        262.931034     Adelie
+        267.241379     Adelie
+        271.551724     Adelie
+        275.862069     Adelie
+        280.172414     Adelie
+        284.482759     Adelie
+        288.793103     Adelie
+        293.103448     Adelie
+        297.413793     Adelie
+        301.724138     Adelie
+        306.034483     Adelie
+        310.344828     Adelie
+        314.655172     Adelie
+        318.965517     Adelie
+        323.275862     Adelie
+        327.586207     Adelie
+        331.896552     Adelie
+        336.206897     Adelie
+        340.517241     Adelie
+        344.827586     Adelie
+        349.137931     Adelie
+        353.448276     Adelie
+        357.758621     Adelie
+        362.068966     Adelie
+        366.379310     Adelie
+        370.689655     Adelie
+        375.000000     Adelie
+2026-08-13 15:47:29 | INFO | M07 | ANALYST CHOICE: Where does the prediction shift and does that match your expectation?
+2026-08-13 15:48:02 | INFO | M07 | flipper_length_mm sweep:
+2026-08-13 15:48:02 | INFO | M07 |  flipper_length_mm prediction
+        250.000000  Chinstrap
+        254.310345  Chinstrap
+        258.620690  Chinstrap
+        262.931034  Chinstrap
+        267.241379  Chinstrap
+        271.551724  Chinstrap
+        275.862069  Chinstrap
+        280.172414  Chinstrap
+        284.482759  Chinstrap
+        288.793103  Chinstrap
+        293.103448  Chinstrap
+        297.413793  Chinstrap
+        301.724138  Chinstrap
+        306.034483  Chinstrap
+        310.344828  Chinstrap
+        314.655172  Chinstrap
+        318.965517  Chinstrap
+        323.275862  Chinstrap
+        327.586207  Chinstrap
+        331.896552  Chinstrap
+        336.206897  Chinstrap
+        340.517241  Chinstrap
+        344.827586  Chinstrap
+        349.137931  Chinstrap
+        353.448276  Chinstrap
+        357.758621  Chinstrap
+        362.068966  Chinstrap
+        366.379310  Chinstrap
+        370.689655  Chinstrap
+        375.000000  Chinstrap
+2026-08-13 15:48:03 | INFO | M07 | ANALYST CHOICE: Where does the prediction shift and does that match your expectation?
+2026-08-13 15:48:18 | INFO | M07 | flipper_length_mm sweep:
+2026-08-13 15:48:18 | INFO | M07 |  flipper_length_mm prediction
+        250.000000     Gentoo
+        254.310345     Gentoo
+        258.620690     Gentoo
+        262.931034     Gentoo
+        267.241379     Gentoo
+        271.551724     Gentoo
+        275.862069     Gentoo
+        280.172414     Gentoo
+        284.482759     Gentoo
+        288.793103     Gentoo
+        293.103448     Gentoo
+        297.413793     Gentoo
+        301.724138     Gentoo
+        306.034483     Gentoo
+        310.344828     Gentoo
+        314.655172     Gentoo
+        318.965517     Gentoo
+        323.275862     Gentoo
+        327.586207     Gentoo
+        331.896552     Gentoo
+        336.206897     Gentoo
+        340.517241     Gentoo
+        344.827586     Gentoo
+        349.137931     Gentoo
+        353.448276     Gentoo
+        357.758621     Gentoo
+        362.068966     Gentoo
+        366.379310     Gentoo
+        370.689655     Gentoo
+        375.000000     Gentoo
+2026-08-13 15:48:18 | INFO | M07 | ANALYST CHOICE: Where does the prediction shift and does that match your expectation?
+2026-08-13 15:48:38 | INFO | M07 | flipper_length_mm sweep:
+2026-08-13 15:48:38 | INFO | M07 |  flipper_length_mm prediction
+        250.000000     Adelie
+        254.310345     Adelie
+        258.620690     Adelie
+        262.931034     Adelie
+        267.241379     Adelie
+        271.551724     Adelie
+        275.862069     Adelie
+        280.172414     Adelie
+        284.482759     Adelie
+        288.793103     Adelie
+        293.103448     Adelie
+        297.413793     Adelie
+        301.724138     Adelie
+        306.034483     Adelie
+        310.344828     Adelie
+        314.655172     Adelie
+        318.965517     Adelie
+        323.275862     Adelie
+        327.586207     Adelie
+        331.896552     Adelie
+        336.206897     Adelie
+        340.517241     Adelie
+        344.827586     Adelie
+        349.137931     Adelie
+        353.448276     Adelie
+        357.758621     Adelie
+        362.068966     Adelie
+        366.379310     Adelie
+        370.689655     Adelie
+        375.000000     Adelie
+2026-08-13 15:48:38 | INFO | M07 | ANALYST CHOICE: Where does the prediction shift and does that match your expectation?
+2026-08-13 15:50:12 | INFO | M07 | bill_depth_mm sweep:
+2026-08-13 15:50:12 | INFO | M07 |  bill_depth_mm prediction
+     12.000000     Adelie
+     12.344828     Adelie
+     12.689655     Adelie
+     13.034483     Adelie
+     13.379310     Adelie
+     13.724138     Adelie
+     14.068966     Adelie
+     14.413793     Adelie
+     14.758621     Adelie
+     15.103448     Adelie
+     15.448276     Adelie
+     15.793103     Adelie
+     16.137931     Adelie
+     16.482759     Adelie
+     16.827586     Adelie
+     17.172414     Adelie
+     17.517241     Adelie
+     17.862069     Adelie
+     18.206897     Adelie
+     18.551724     Adelie
+     18.896552     Adelie
+     19.241379     Adelie
+     19.586207     Adelie
+     19.931034     Adelie
+     20.275862     Adelie
+     20.620690     Adelie
+     20.965517     Adelie
+     21.310345     Adelie
+     21.655172     Adelie
+     22.000000     Adelie
+2026-08-13 15:50:12 | INFO | M07 | ANALYST CHOICE: Where does the prediction shift and does that match your expectation?
+2026-08-13 15:53:30 | INFO | M07 | bill_length_mm sweep:
+2026-08-13 15:53:30 | INFO | M07 |  bill_length_mm prediction
+      35.000000     Adelie
+      35.517241     Adelie
+      36.034483     Adelie
+      36.551724     Adelie
+      37.068966     Adelie
+      37.586207     Adelie
+      38.103448     Adelie
+      38.620690     Adelie
+      39.137931     Adelie
+      39.655172     Adelie
+      40.172414     Adelie
+      40.689655     Adelie
+      41.206897     Adelie
+      41.724138     Adelie
+      42.241379     Adelie
+      42.758621  Chinstrap
+      43.275862  Chinstrap
+      43.793103  Chinstrap
+      44.310345  Chinstrap
+      44.827586  Chinstrap
+      45.344828  Chinstrap
+      45.862069  Chinstrap
+      46.379310  Chinstrap
+      46.896552  Chinstrap
+      47.413793  Chinstrap
+      47.931034  Chinstrap
+      48.448276  Chinstrap
+      48.965517  Chinstrap
+      49.482759  Chinstrap
+      50.000000  Chinstrap
+2026-08-13 15:53:30 | INFO | M07 | ANALYST CHOICE: Where does the prediction shift and does that match your expectation?
+2026-08-13 15:54:09 | INFO | M07 | Adelie baseline - bill_length_mm sweep:
+2026-08-13 15:54:09 | INFO | M07 |  bill_length_mm prediction
+      35.000000     Adelie
+      35.517241     Adelie
+      36.034483     Adelie
+      36.551724     Adelie
+      37.068966     Adelie
+      37.586207     Adelie
+      38.103448     Adelie
+      38.620690     Adelie
+      39.137931     Adelie
+      39.655172     Adelie
+      40.172414     Adelie
+      40.689655     Adelie
+      41.206897     Adelie
+      41.724138     Adelie
+      42.241379     Adelie
+      42.758621  Chinstrap
+      43.275862  Chinstrap
+      43.793103  Chinstrap
+      44.310345  Chinstrap
+      44.827586  Chinstrap
+      45.344828  Chinstrap
+      45.862069  Chinstrap
+      46.379310  Chinstrap
+      46.896552  Chinstrap
+      47.413793  Chinstrap
+      47.931034  Chinstrap
+      48.448276  Chinstrap
+      48.965517  Chinstrap
+      49.482759  Chinstrap
+      50.000000  Chinstrap
+2026-08-13 15:54:13 | INFO | M07 | Chinstrap baseline - bill_length_mm sweep:
+2026-08-13 15:54:13 | INFO | M07 |  bill_length_mm prediction
+      35.000000     Adelie
+      35.517241     Adelie
+      36.034483     Adelie
+      36.551724     Adelie
+      37.068966     Adelie
+      37.586207     Adelie
+      38.103448     Adelie
+      38.620690     Adelie
+      39.137931     Adelie
+      39.655172     Adelie
+      40.172414     Adelie
+      40.689655     Adelie
+      41.206897     Adelie
+      41.724138     Adelie
+      42.241379     Adelie
+      42.758621     Adelie
+      43.275862  Chinstrap
+      43.793103  Chinstrap
+      44.310345  Chinstrap
+      44.827586  Chinstrap
+      45.344828  Chinstrap
+      45.862069  Chinstrap
+      46.379310  Chinstrap
+      46.896552  Chinstrap
+      47.413793  Chinstrap
+      47.931034  Chinstrap
+      48.448276  Chinstrap
+      48.965517  Chinstrap
+      49.482759  Chinstrap
+      50.000000  Chinstrap
+2026-08-13 15:54:18 | INFO | M07 | Gentoo baseline - bill_length_mm sweep:
+2026-08-13 15:54:18 | INFO | M07 |  bill_length_mm prediction
+      35.000000     Gentoo
+      35.517241     Gentoo
+      36.034483     Gentoo
+      36.551724     Gentoo
+      37.068966     Gentoo
+      37.586207     Gentoo
+      38.103448     Gentoo
+      38.620690     Gentoo
+      39.137931     Gentoo
+      39.655172     Gentoo
+      40.172414     Gentoo
+      40.689655     Gentoo
+      41.206897     Gentoo
+      41.724138     Gentoo
+      42.241379     Gentoo
+      42.758621     Gentoo
+      43.275862     Gentoo
+      43.793103     Gentoo
+      44.310345     Gentoo
+      44.827586     Gentoo
+      45.344828     Gentoo
+      45.862069     Gentoo
+      46.379310     Gentoo
+      46.896552     Gentoo
+      47.413793     Gentoo
+      47.931034     Gentoo
+      48.448276     Gentoo
+      48.965517     Gentoo
+      49.482759     Gentoo
+      50.000000     Gentoo
+2026-08-13 15:57:06 | INFO | M07 | === RUN START ===
+2026-08-13 15:57:06 | INFO | M07 | project=M07
+2026-08-13 15:57:06 | INFO | M07 | repo_dir=ml-07-applied
+2026-08-13 15:57:06 | INFO | M07 | python=3.14.5
+2026-08-13 15:57:06 | INFO | M07 | os=Darwin 20.6.0
+2026-08-13 15:57:06 | INFO | M07 | shell=zsh
+2026-08-13 15:57:06 | INFO | M07 | cwd=notebooks
+2026-08-13 15:57:06 | INFO | M07 | github_actions=False
+2026-08-13 15:57:06 | INFO | M07 | Confirming installation:
+2026-08-13 15:57:06 | INFO | M07 |   python:       3.14.5
+2026-08-13 15:57:06 | INFO | M07 |   pandas:       3.0.5
+2026-08-13 15:57:06 | INFO | M07 |   numpy:        2.5.2
+2026-08-13 15:57:06 | INFO | M07 |   matplotlib:   3.11.1
+2026-08-13 15:57:06 | INFO | M07 |   seaborn:      0.13.2
+2026-08-13 15:57:06 | INFO | M07 |   requests:     2.34.2
+2026-08-13 15:57:06 | INFO | M07 | API endpoint: https://ml-penguin-predictor.onrender.com/predict
+2026-08-13 15:57:06 | INFO | M07 | Baseline predictions:
+2026-08-13 15:57:06 | INFO | M07 |   expected=Adelie     got=Adelie     [OK]
+2026-08-13 15:57:06 | INFO | M07 |   expected=Chinstrap  got=Chinstrap  [OK]
+2026-08-13 15:57:07 | INFO | M07 |   expected=Gentoo     got=Gentoo     [OK]
+2026-08-13 15:57:11 | INFO | M07 | bill_length_mm sweep:
+2026-08-13 15:57:11 | INFO | M07 |  bill_length_mm prediction
+      35.000000     Adelie
+      35.517241     Adelie
+      36.034483     Adelie
+      36.551724     Adelie
+      37.068966     Adelie
+      37.586207     Adelie
+      38.103448     Adelie
+      38.620690     Adelie
+      39.137931     Adelie
+      39.655172     Adelie
+      40.172414     Adelie
+      40.689655     Adelie
+      41.206897     Adelie
+      41.724138     Adelie
+      42.241379     Adelie
+      42.758621  Chinstrap
+      43.275862  Chinstrap
+      43.793103  Chinstrap
+      44.310345  Chinstrap
+      44.827586  Chinstrap
+      45.344828  Chinstrap
+      45.862069  Chinstrap
+      46.379310  Chinstrap
+      46.896552  Chinstrap
+      47.413793  Chinstrap
+      47.931034  Chinstrap
+      48.448276  Chinstrap
+      48.965517  Chinstrap
+      49.482759  Chinstrap
+      50.000000  Chinstrap
+2026-08-13 15:57:11 | INFO | M07 | ANALYST CHOICE: Where does the prediction shift and does that match your expectation?
+2026-08-13 15:57:25 | INFO | M07 | ANALYST CHOICE: What does the boundary shape tell you about the model?
+2026-08-13 15:57:25 | INFO | M07 | Edge case results:
+2026-08-13 15:57:25 | INFO | M07 |   missing feature        -> ERROR: 400 Client Error: Bad Request for url: https://ml-penguin-predictor.onrender.com/predict
+2026-08-13 15:57:25 | INFO | M07 |   extreme bill length    -> Adelie
+2026-08-13 15:57:25 | INFO | M07 |   very large bill        -> Chinstrap
+2026-08-13 15:57:25 | INFO | M07 |   negative value         -> Adelie
+2026-08-13 15:57:25 | INFO | M07 |   zero body mass         -> Adelie
+2026-08-13 15:57:25 | INFO | M07 | ANALYST CHOICE: Which edge cases were handled cleanly and which were not?
+2026-08-13 15:57:25 | INFO | M07 | ========================
+2026-08-13 15:57:25 | INFO | M07 | SUMMARY
+2026-08-13 15:57:25 | INFO | M07 | ========================
+2026-08-13 15:57:25 | INFO | M07 | API endpoint: https://ml-penguin-predictor.onrender.com/predict
+2026-08-13 15:57:25 | INFO | M07 | ========================
+2026-08-13 16:02:51 | INFO | M07 | body_mass_g sweep:
+2026-08-13 16:02:51 | INFO | M07 |  body_mass_g prediction
+ 2500.000000     Adelie
+ 2620.689655     Adelie
+ 2741.379310     Adelie
+ 2862.068966     Adelie
+ 2982.758621     Adelie
+ 3103.448276     Adelie
+ 3224.137931     Adelie
+ 3344.827586     Adelie
+ 3465.517241     Adelie
+ 3586.206897     Adelie
+ 3706.896552     Adelie
+ 3827.586207     Adelie
+ 3948.275862     Adelie
+ 4068.965517     Adelie
+ 4189.655172     Adelie
+ 4310.344828     Adelie
+ 4431.034483     Adelie
+ 4551.724138     Adelie
+ 4672.413793     Adelie
+ 4793.103448     Adelie
+ 4913.793103     Adelie
+ 5034.482759     Adelie
+ 5155.172414     Adelie
+ 5275.862069     Adelie
+ 5396.551724     Adelie
+ 5517.241379     Adelie
+ 5637.931034     Adelie
+ 5758.620690     Adelie
+ 5879.310345     Adelie
+ 6000.000000     Adelie
+2026-08-13 16:04:08 | INFO | M07 | flipper_length_mm sweep:
+2026-08-13 16:04:08 | INFO | M07 |  flipper_length_mm prediction
+        170.000000     Adelie
+        172.068966     Adelie
+        174.137931     Adelie
+        176.206897     Adelie
+        178.275862     Adelie
+        180.344828     Adelie
+        182.413793     Adelie
+        184.482759     Adelie
+        186.551724     Adelie
+        188.620690     Adelie
+        190.689655     Adelie
+        192.758621     Adelie
+        194.827586     Adelie
+        196.896552     Adelie
+        198.965517     Adelie
+        201.034483     Adelie
+        203.103448     Adelie
+        205.172414     Adelie
+        207.241379     Adelie
+        209.310345     Adelie
+        211.379310     Adelie
+        213.448276     Adelie
+        215.517241     Adelie
+        217.586207     Adelie
+        219.655172     Adelie
+        221.724138     Adelie
+        223.793103     Adelie
+        225.862069     Adelie
+        227.931034     Adelie
+        230.000000     Adelie
