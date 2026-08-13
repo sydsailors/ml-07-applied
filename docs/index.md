@@ -21,19 +21,20 @@ to get the example projects running on your machine.
 
 ## Phase 4. Technical Modification
 
-Describe your small technical modification to the example project.
+For Phase 4, I copied `ml_07_case.ipynb` and renamed it `ml_07_sailors_p4.ipynb`.
+I made 2 small changes to the `bill_length_mm` feature sweep:
 
-Include:
+- Increased the number of values tested from 20 to 30
+- Narrowed the range from 30-60 mm to 35-50 mm
 
-- What you changed
-- Why you chose that change
-- How you verified that it worked
-- What result, output, chart, metric, or behavior confirmed the change
+These changes were made to examine the model's decision boundary more closely.
+The smaller range and additional test points could help make it easier to identify
+where the prediction changed.
 
-Compared with the example project,
-explain what is different and why the change matters.
+The model predicted Adelie up to a bill length of 42.24 mm and then changed to Chinstrap
+at approximately 42.76 mm and remained Chinstrap for the rest of the tested range.
 
-Was it easy, or surprisingly challenging and why do you think so?
+This was an easy modification because it only required changing values in `np.linespace`.
 
 ## Phase 5. Custom Project
 
