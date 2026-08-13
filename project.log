@@ -1600,3 +1600,151 @@ dtype: int64
         225.862069     Adelie
         227.931034     Adelie
         230.000000     Adelie
+2026-08-13 16:31:02 | INFO | M07 | === RUN START ===
+2026-08-13 16:31:02 | INFO | M07 | project=M07
+2026-08-13 16:31:02 | INFO | M07 | repo_dir=ml-07-applied
+2026-08-13 16:31:02 | INFO | M07 | python=3.14.5
+2026-08-13 16:31:02 | INFO | M07 | os=Darwin 20.6.0
+2026-08-13 16:31:02 | INFO | M07 | shell=zsh
+2026-08-13 16:31:02 | INFO | M07 | cwd=notebooks
+2026-08-13 16:31:02 | INFO | M07 | github_actions=False
+2026-08-13 16:31:02 | INFO | M07 | Confirming installation:
+2026-08-13 16:31:02 | INFO | M07 |   python:       3.14.5
+2026-08-13 16:31:02 | INFO | M07 |   pandas:       3.0.5
+2026-08-13 16:31:02 | INFO | M07 |   numpy:        2.5.2
+2026-08-13 16:31:02 | INFO | M07 |   matplotlib:   3.11.1
+2026-08-13 16:31:02 | INFO | M07 |   seaborn:      0.13.2
+2026-08-13 16:31:02 | INFO | M07 |   requests:     2.34.2
+2026-08-13 16:31:02 | INFO | M07 | API endpoint: https://ml-penguin-predictor.onrender.com/predict
+2026-08-13 16:31:02 | INFO | M07 | Baseline predictions:
+2026-08-13 16:31:32 | INFO | M07 |   expected=Adelie     got=TIMEOUT (server may be sleeping - try again) [MISMATCH]
+2026-08-13 16:31:43 | INFO | M07 | === RUN START ===
+2026-08-13 16:31:43 | INFO | M07 | project=M07
+2026-08-13 16:31:43 | INFO | M07 | repo_dir=ml-07-applied
+2026-08-13 16:31:43 | INFO | M07 | python=3.14.5
+2026-08-13 16:31:43 | INFO | M07 | os=Darwin 20.6.0
+2026-08-13 16:31:43 | INFO | M07 | shell=zsh
+2026-08-13 16:31:43 | INFO | M07 | cwd=notebooks
+2026-08-13 16:31:43 | INFO | M07 | github_actions=False
+2026-08-13 16:31:43 | INFO | M07 | Confirming installation:
+2026-08-13 16:31:43 | INFO | M07 |   python:       3.14.5
+2026-08-13 16:31:43 | INFO | M07 |   pandas:       3.0.5
+2026-08-13 16:31:43 | INFO | M07 |   numpy:        2.5.2
+2026-08-13 16:31:43 | INFO | M07 |   matplotlib:   3.11.1
+2026-08-13 16:31:43 | INFO | M07 |   seaborn:      0.13.2
+2026-08-13 16:31:43 | INFO | M07 |   requests:     2.34.2
+2026-08-13 16:31:43 | INFO | M07 | API endpoint: https://ml-penguin-predictor.onrender.com/predict
+2026-08-13 16:31:43 | INFO | M07 | Baseline predictions:
+2026-08-13 16:31:54 | INFO | M07 |   expected=Adelie     got=Adelie     [OK]
+2026-08-13 16:31:54 | INFO | M07 |   expected=Chinstrap  got=Chinstrap  [OK]
+2026-08-13 16:31:54 | INFO | M07 |   expected=Gentoo     got=Gentoo     [OK]
+2026-08-13 16:32:00 | INFO | M07 | bill_length_mm sweep:
+2026-08-13 16:32:00 | INFO | M07 |  bill_length_mm prediction
+      35.000000     Adelie
+      35.517241     Adelie
+      36.034483     Adelie
+      36.551724     Adelie
+      37.068966     Adelie
+      37.586207     Adelie
+      38.103448     Adelie
+      38.620690     Adelie
+      39.137931     Adelie
+      39.655172     Adelie
+      40.172414     Adelie
+      40.689655     Adelie
+      41.206897     Adelie
+      41.724138     Adelie
+      42.241379     Adelie
+      42.758621  Chinstrap
+      43.275862  Chinstrap
+      43.793103  Chinstrap
+      44.310345  Chinstrap
+      44.827586  Chinstrap
+      45.344828  Chinstrap
+      45.862069  Chinstrap
+      46.379310  Chinstrap
+      46.896552  Chinstrap
+      47.413793  Chinstrap
+      47.931034  Chinstrap
+      48.448276  Chinstrap
+      48.965517  Chinstrap
+      49.482759  Chinstrap
+      50.000000  Chinstrap
+2026-08-13 16:32:00 | INFO | M07 | ANALYST CHOICE: Where does the prediction shift and does that match your expectation?
+2026-08-13 16:32:06 | INFO | M07 | body_mass_g sweep:
+2026-08-13 16:32:06 | INFO | M07 |  body_mass_g prediction
+ 2500.000000     Adelie
+ 2620.689655     Adelie
+ 2741.379310     Adelie
+ 2862.068966     Adelie
+ 2982.758621     Adelie
+ 3103.448276     Adelie
+ 3224.137931     Adelie
+ 3344.827586     Adelie
+ 3465.517241     Adelie
+ 3586.206897     Adelie
+ 3706.896552     Adelie
+ 3827.586207     Adelie
+ 3948.275862     Adelie
+ 4068.965517     Adelie
+ 4189.655172     Adelie
+ 4310.344828     Adelie
+ 4431.034483     Adelie
+ 4551.724138     Adelie
+ 4672.413793     Adelie
+ 4793.103448     Adelie
+ 4913.793103     Adelie
+ 5034.482759     Adelie
+ 5155.172414     Adelie
+ 5275.862069     Adelie
+ 5396.551724     Adelie
+ 5517.241379     Adelie
+ 5637.931034     Adelie
+ 5758.620690     Adelie
+ 5879.310345     Adelie
+ 6000.000000     Adelie
+2026-08-13 16:32:12 | INFO | M07 | flipper_length_mm sweep:
+2026-08-13 16:32:12 | INFO | M07 |  flipper_length_mm prediction
+        170.000000     Adelie
+        172.068966     Adelie
+        174.137931     Adelie
+        176.206897     Adelie
+        178.275862     Adelie
+        180.344828     Adelie
+        182.413793     Adelie
+        184.482759     Adelie
+        186.551724     Adelie
+        188.620690     Adelie
+        190.689655     Adelie
+        192.758621     Adelie
+        194.827586     Adelie
+        196.896552     Adelie
+        198.965517     Adelie
+        201.034483     Adelie
+        203.103448     Adelie
+        205.172414     Adelie
+        207.241379     Adelie
+        209.310345     Adelie
+        211.379310     Adelie
+        213.448276     Adelie
+        215.517241     Adelie
+        217.586207     Adelie
+        219.655172     Adelie
+        221.724138     Adelie
+        223.793103     Adelie
+        225.862069     Adelie
+        227.931034     Adelie
+        230.000000     Adelie
+2026-08-13 16:32:31 | INFO | M07 | ANALYST CHOICE: What does the boundary shape tell you about the model?
+2026-08-13 16:32:31 | INFO | M07 | Edge case results:
+2026-08-13 16:32:32 | INFO | M07 |   missing feature        -> ERROR: 400 Client Error: Bad Request for url: https://ml-penguin-predictor.onrender.com/predict
+2026-08-13 16:32:32 | INFO | M07 |   extreme bill length    -> Adelie
+2026-08-13 16:32:32 | INFO | M07 |   very large bill        -> Chinstrap
+2026-08-13 16:32:32 | INFO | M07 |   negative value         -> Adelie
+2026-08-13 16:32:32 | INFO | M07 |   zero body mass         -> Adelie
+2026-08-13 16:32:32 | INFO | M07 | ANALYST CHOICE: Which edge cases were handled cleanly and which were not?
+2026-08-13 16:32:32 | INFO | M07 | ========================
+2026-08-13 16:32:32 | INFO | M07 | SUMMARY
+2026-08-13 16:32:32 | INFO | M07 | ========================
+2026-08-13 16:32:32 | INFO | M07 | API endpoint: https://ml-penguin-predictor.onrender.com/predict
+2026-08-13 16:32:32 | INFO | M07 | ========================
