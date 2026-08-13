@@ -723,3 +723,370 @@ dtype: int64
 2026-08-12 15:32:04 | INFO | M07 |   scikit-learn: 1.9.0
 2026-08-12 15:32:04 | INFO | M07 |   seaborn:      0.13.2
 2026-08-12 15:32:04 | INFO | M07 |   matplotlib:   3.11.1
+2026-08-13 09:22:02 | INFO | M07 | === RUN START ===
+2026-08-13 09:22:02 | INFO | M07 | project=M07
+2026-08-13 09:22:02 | INFO | M07 | repo_dir=ml-07-applied
+2026-08-13 09:22:02 | INFO | M07 | python=3.14.5
+2026-08-13 09:22:02 | INFO | M07 | os=Darwin 20.6.0
+2026-08-13 09:22:02 | INFO | M07 | shell=zsh
+2026-08-13 09:22:02 | INFO | M07 | cwd=notebooks
+2026-08-13 09:22:02 | INFO | M07 | github_actions=False
+2026-08-13 09:22:02 | INFO | M07 | Confirming installation:
+2026-08-13 09:22:02 | INFO | M07 |   python:       3.14.5
+2026-08-13 09:22:02 | INFO | M07 |   pandas:       3.0.5
+2026-08-13 09:22:02 | INFO | M07 |   numpy:        2.5.2
+2026-08-13 09:22:02 | INFO | M07 |   matplotlib:   3.11.1
+2026-08-13 09:22:02 | INFO | M07 |   seaborn:      0.13.2
+2026-08-13 09:22:02 | INFO | M07 |   requests:     2.34.2
+2026-08-13 09:22:02 | INFO | M07 | API endpoint: https://ml-penguin-predictor.onrender.com/predict
+2026-08-13 09:22:17 | INFO | M07 | Baseline predictions:
+2026-08-13 09:22:47 | INFO | M07 |   expected=Adelie     got=TIMEOUT (server may be sleeping - try again) [MISMATCH]
+2026-08-13 09:23:10 | INFO | M07 |   expected=Chinstrap  got=Chinstrap  [OK]
+2026-08-13 09:23:10 | INFO | M07 |   expected=Gentoo     got=Gentoo     [OK]
+2026-08-13 09:23:53 | INFO | M07 | Baseline predictions:
+2026-08-13 09:23:53 | INFO | M07 |   expected=Adelie     got=Adelie     [OK]
+2026-08-13 09:23:54 | INFO | M07 |   expected=Chinstrap  got=Chinstrap  [OK]
+2026-08-13 09:23:54 | INFO | M07 |   expected=Gentoo     got=Gentoo     [OK]
+2026-08-13 09:25:25 | INFO | M07 | bill_length_mm sweep:
+2026-08-13 09:25:25 | INFO | M07 |  bill_length_mm prediction
+      30.000000     Adelie
+      31.034483     Adelie
+      32.068966     Adelie
+      33.103448     Adelie
+      34.137931     Adelie
+      35.172414     Adelie
+      36.206897     Adelie
+      37.241379     Adelie
+      38.275862     Adelie
+      39.310345     Adelie
+      40.344828     Adelie
+      41.379310     Adelie
+      42.413793  Chinstrap
+      43.448276  Chinstrap
+      44.482759  Chinstrap
+      45.517241  Chinstrap
+      46.551724  Chinstrap
+      47.586207  Chinstrap
+      48.620690  Chinstrap
+      49.655172  Chinstrap
+      50.689655  Chinstrap
+      51.724138  Chinstrap
+      52.758621  Chinstrap
+      53.793103  Chinstrap
+      54.827586  Chinstrap
+      55.862069  Chinstrap
+      56.896552  Chinstrap
+      57.931034  Chinstrap
+      58.965517  Chinstrap
+      60.000000  Chinstrap
+2026-08-13 09:25:25 | INFO | M07 | ANALYST CHOICE: Where does the prediction shift and does that match your expectation?
+2026-08-13 09:29:12 | INFO | M07 | bill_length_mm sweep:
+2026-08-13 09:29:12 | INFO | M07 |  bill_length_mm prediction
+      30.000000     Adelie
+      31.034483     Adelie
+      32.068966     Adelie
+      33.103448     Adelie
+      34.137931     Adelie
+      35.172414     Adelie
+      36.206897     Adelie
+      37.241379     Adelie
+      38.275862     Adelie
+      39.310345     Adelie
+      40.344828     Adelie
+      41.379310     Adelie
+      42.413793     Adelie
+      43.448276  Chinstrap
+      44.482759  Chinstrap
+      45.517241  Chinstrap
+      46.551724  Chinstrap
+      47.586207  Chinstrap
+      48.620690  Chinstrap
+      49.655172  Chinstrap
+      50.689655  Chinstrap
+      51.724138  Chinstrap
+      52.758621  Chinstrap
+      53.793103  Chinstrap
+      54.827586  Chinstrap
+      55.862069  Chinstrap
+      56.896552  Chinstrap
+      57.931034  Chinstrap
+      58.965517  Chinstrap
+      60.000000  Chinstrap
+2026-08-13 09:29:12 | INFO | M07 | ANALYST CHOICE: Where does the prediction shift and does that match your expectation?
+2026-08-13 09:30:23 | INFO | M07 | bill_length_mm sweep:
+2026-08-13 09:30:23 | INFO | M07 |  bill_length_mm prediction
+      30.000000     Adelie
+      31.034483     Adelie
+      32.068966     Adelie
+      33.103448     Adelie
+      34.137931     Adelie
+      35.172414     Adelie
+      36.206897     Adelie
+      37.241379     Adelie
+      38.275862     Adelie
+      39.310345     Adelie
+      40.344828     Adelie
+      41.379310     Adelie
+      42.413793     Adelie
+      43.448276  Chinstrap
+      44.482759  Chinstrap
+      45.517241  Chinstrap
+      46.551724  Chinstrap
+      47.586207  Chinstrap
+      48.620690  Chinstrap
+      49.655172  Chinstrap
+      50.689655  Chinstrap
+      51.724138  Chinstrap
+      52.758621  Chinstrap
+      53.793103  Chinstrap
+      54.827586  Chinstrap
+      55.862069  Chinstrap
+      56.896552  Chinstrap
+      57.931034  Chinstrap
+      58.965517  Chinstrap
+      60.000000  Chinstrap
+2026-08-13 09:30:23 | INFO | M07 | ANALYST CHOICE: Where does the prediction shift and does that match your expectation?
+2026-08-13 09:30:47 | INFO | M07 | bill_length_mm sweep:
+2026-08-13 09:30:47 | INFO | M07 |  bill_length_mm prediction
+      30.000000     Adelie
+      31.034483     Adelie
+      32.068966     Adelie
+      33.103448     Adelie
+      34.137931     Adelie
+      35.172414     Adelie
+      36.206897     Adelie
+      37.241379     Adelie
+      38.275862     Adelie
+      39.310345     Adelie
+      40.344828     Adelie
+      41.379310     Adelie
+      42.413793  Chinstrap
+      43.448276  Chinstrap
+      44.482759  Chinstrap
+      45.517241  Chinstrap
+      46.551724  Chinstrap
+      47.586207  Chinstrap
+      48.620690  Chinstrap
+      49.655172  Chinstrap
+      50.689655  Chinstrap
+      51.724138  Chinstrap
+      52.758621  Chinstrap
+      53.793103  Chinstrap
+      54.827586  Chinstrap
+      55.862069  Chinstrap
+      56.896552  Chinstrap
+      57.931034  Chinstrap
+      58.965517  Chinstrap
+      60.000000  Chinstrap
+2026-08-13 09:30:47 | INFO | M07 | ANALYST CHOICE: Where does the prediction shift and does that match your expectation?
+2026-08-13 09:32:20 | INFO | M07 | bill_length_mm sweep:
+2026-08-13 09:32:20 | INFO | M07 |  bill_length_mm prediction
+      30.000000     Adelie
+      31.034483     Adelie
+      32.068966     Adelie
+      33.103448     Adelie
+      34.137931     Adelie
+      35.172414     Adelie
+      36.206897     Adelie
+      37.241379     Adelie
+      38.275862     Adelie
+      39.310345     Adelie
+      40.344828     Adelie
+      41.379310     Adelie
+      42.413793     Adelie
+      43.448276  Chinstrap
+      44.482759  Chinstrap
+      45.517241  Chinstrap
+      46.551724  Chinstrap
+      47.586207  Chinstrap
+      48.620690  Chinstrap
+      49.655172  Chinstrap
+      50.689655  Chinstrap
+      51.724138  Chinstrap
+      52.758621  Chinstrap
+      53.793103  Chinstrap
+      54.827586  Chinstrap
+      55.862069  Chinstrap
+      56.896552  Chinstrap
+      57.931034  Chinstrap
+      58.965517  Chinstrap
+      60.000000  Chinstrap
+2026-08-13 09:32:20 | INFO | M07 | ANALYST CHOICE: Where does the prediction shift and does that match your expectation?
+2026-08-13 09:34:45 | INFO | M07 | bill_length_mm sweep:
+2026-08-13 09:34:45 | INFO | M07 |  bill_length_mm prediction
+      35.000000     Adelie
+      35.517241     Adelie
+      36.034483     Adelie
+      36.551724     Adelie
+      37.068966     Adelie
+      37.586207     Adelie
+      38.103448     Adelie
+      38.620690     Adelie
+      39.137931     Adelie
+      39.655172     Adelie
+      40.172414     Adelie
+      40.689655     Adelie
+      41.206897     Adelie
+      41.724138     Adelie
+      42.241379     Adelie
+      42.758621  Chinstrap
+      43.275862  Chinstrap
+      43.793103  Chinstrap
+      44.310345  Chinstrap
+      44.827586  Chinstrap
+      45.344828  Chinstrap
+      45.862069  Chinstrap
+      46.379310  Chinstrap
+      46.896552  Chinstrap
+      47.413793  Chinstrap
+      47.931034  Chinstrap
+      48.448276  Chinstrap
+      48.965517  Chinstrap
+      49.482759  Chinstrap
+      50.000000  Chinstrap
+2026-08-13 09:34:45 | INFO | M07 | ANALYST CHOICE: Where does the prediction shift and does that match your expectation?
+2026-08-13 09:46:25 | INFO | M07 | ANALYST CHOICE: What does the boundary shape tell you about the model?
+2026-08-13 09:46:32 | INFO | M07 | Edge case results:
+2026-08-13 09:46:32 | INFO | M07 |   missing feature        -> ERROR: 400 Client Error: Bad Request for url: https://ml-penguin-predictor.onrender.com/predict
+2026-08-13 09:46:32 | INFO | M07 |   extreme bill length    -> Adelie
+2026-08-13 09:46:32 | INFO | M07 |   very large bill        -> Chinstrap
+2026-08-13 09:46:32 | INFO | M07 |   negative value         -> Adelie
+2026-08-13 09:46:33 | INFO | M07 |   zero body mass         -> Adelie
+2026-08-13 09:46:33 | INFO | M07 | ANALYST CHOICE: Which edge cases were handled cleanly and which were not?
+2026-08-13 09:49:02 | INFO | M07 | ========================
+2026-08-13 09:49:02 | INFO | M07 | SUMMARY
+2026-08-13 09:49:02 | INFO | M07 | ========================
+2026-08-13 09:49:02 | INFO | M07 | API endpoint: https://ml-penguin-predictor.onrender.com/predict
+2026-08-13 09:49:02 | INFO | M07 | ========================
+2026-08-13 10:08:54 | INFO | M07 | === RUN START ===
+2026-08-13 10:08:54 | INFO | M07 | project=M07
+2026-08-13 10:08:54 | INFO | M07 | repo_dir=ml-07-applied
+2026-08-13 10:08:54 | INFO | M07 | python=3.14.5
+2026-08-13 10:08:54 | INFO | M07 | os=Darwin 20.6.0
+2026-08-13 10:08:54 | INFO | M07 | shell=zsh
+2026-08-13 10:08:54 | INFO | M07 | cwd=notebooks
+2026-08-13 10:08:54 | INFO | M07 | github_actions=False
+2026-08-13 10:08:54 | INFO | M07 | Confirming installation:
+2026-08-13 10:08:54 | INFO | M07 |   python:       3.14.5
+2026-08-13 10:08:54 | INFO | M07 |   pandas:       3.0.5
+2026-08-13 10:08:54 | INFO | M07 |   numpy:        2.5.2
+2026-08-13 10:08:54 | INFO | M07 |   matplotlib:   3.11.1
+2026-08-13 10:08:54 | INFO | M07 |   seaborn:      0.13.2
+2026-08-13 10:08:54 | INFO | M07 |   requests:     2.34.2
+2026-08-13 10:08:54 | INFO | M07 | API endpoint: https://ml-penguin-predictor.onrender.com/predict
+2026-08-13 10:08:54 | INFO | M07 | Baseline predictions:
+2026-08-13 10:09:24 | INFO | M07 |   expected=Adelie     got=TIMEOUT (server may be sleeping - try again) [MISMATCH]
+2026-08-13 10:09:54 | INFO | M07 |   expected=Chinstrap  got=TIMEOUT (server may be sleeping - try again) [MISMATCH]
+2026-08-13 10:10:15 | INFO | M07 |   expected=Gentoo     got=Gentoo     [OK]
+2026-08-13 10:10:22 | INFO | M07 | bill_length_mm sweep:
+2026-08-13 10:10:22 | INFO | M07 |  bill_length_mm prediction
+      35.000000     Adelie
+      35.517241     Adelie
+      36.034483     Adelie
+      36.551724     Adelie
+      37.068966     Adelie
+      37.586207     Adelie
+      38.103448     Adelie
+      38.620690     Adelie
+      39.137931     Adelie
+      39.655172     Adelie
+      40.172414     Adelie
+      40.689655     Adelie
+      41.206897     Adelie
+      41.724138     Adelie
+      42.241379     Adelie
+      42.758621  Chinstrap
+      43.275862  Chinstrap
+      43.793103  Chinstrap
+      44.310345  Chinstrap
+      44.827586  Chinstrap
+      45.344828  Chinstrap
+      45.862069  Chinstrap
+      46.379310  Chinstrap
+      46.896552  Chinstrap
+      47.413793  Chinstrap
+      47.931034  Chinstrap
+      48.448276  Chinstrap
+      48.965517  Chinstrap
+      49.482759  Chinstrap
+      50.000000  Chinstrap
+2026-08-13 10:10:22 | INFO | M07 | ANALYST CHOICE: Where does the prediction shift and does that match your expectation?
+2026-08-13 10:10:40 | INFO | M07 | ANALYST CHOICE: What does the boundary shape tell you about the model?
+2026-08-13 10:10:40 | INFO | M07 | Edge case results:
+2026-08-13 10:10:40 | INFO | M07 |   missing feature        -> ERROR: 400 Client Error: Bad Request for url: https://ml-penguin-predictor.onrender.com/predict
+2026-08-13 10:10:40 | INFO | M07 |   extreme bill length    -> Adelie
+2026-08-13 10:10:41 | INFO | M07 |   very large bill        -> Chinstrap
+2026-08-13 10:10:41 | INFO | M07 |   negative value         -> Adelie
+2026-08-13 10:10:41 | INFO | M07 |   zero body mass         -> Adelie
+2026-08-13 10:10:41 | INFO | M07 | ANALYST CHOICE: Which edge cases were handled cleanly and which were not?
+2026-08-13 10:10:41 | INFO | M07 | ========================
+2026-08-13 10:10:41 | INFO | M07 | SUMMARY
+2026-08-13 10:10:41 | INFO | M07 | ========================
+2026-08-13 10:10:41 | INFO | M07 | API endpoint: https://ml-penguin-predictor.onrender.com/predict
+2026-08-13 10:10:41 | INFO | M07 | ========================
+2026-08-13 10:11:48 | INFO | M07 | === RUN START ===
+2026-08-13 10:11:48 | INFO | M07 | project=M07
+2026-08-13 10:11:48 | INFO | M07 | repo_dir=ml-07-applied
+2026-08-13 10:11:48 | INFO | M07 | python=3.14.5
+2026-08-13 10:11:48 | INFO | M07 | os=Darwin 20.6.0
+2026-08-13 10:11:48 | INFO | M07 | shell=zsh
+2026-08-13 10:11:48 | INFO | M07 | cwd=notebooks
+2026-08-13 10:11:48 | INFO | M07 | github_actions=False
+2026-08-13 10:11:48 | INFO | M07 | Confirming installation:
+2026-08-13 10:11:48 | INFO | M07 |   python:       3.14.5
+2026-08-13 10:11:48 | INFO | M07 |   pandas:       3.0.5
+2026-08-13 10:11:48 | INFO | M07 |   numpy:        2.5.2
+2026-08-13 10:11:48 | INFO | M07 |   matplotlib:   3.11.1
+2026-08-13 10:11:48 | INFO | M07 |   seaborn:      0.13.2
+2026-08-13 10:11:48 | INFO | M07 |   requests:     2.34.2
+2026-08-13 10:11:48 | INFO | M07 | API endpoint: https://ml-penguin-predictor.onrender.com/predict
+2026-08-13 10:11:48 | INFO | M07 | Baseline predictions:
+2026-08-13 10:11:48 | INFO | M07 |   expected=Adelie     got=Adelie     [OK]
+2026-08-13 10:11:48 | INFO | M07 |   expected=Chinstrap  got=Chinstrap  [OK]
+2026-08-13 10:11:49 | INFO | M07 |   expected=Gentoo     got=Gentoo     [OK]
+2026-08-13 10:11:54 | INFO | M07 | bill_length_mm sweep:
+2026-08-13 10:11:54 | INFO | M07 |  bill_length_mm prediction
+      35.000000     Adelie
+      35.517241     Adelie
+      36.034483     Adelie
+      36.551724     Adelie
+      37.068966     Adelie
+      37.586207     Adelie
+      38.103448     Adelie
+      38.620690     Adelie
+      39.137931     Adelie
+      39.655172     Adelie
+      40.172414     Adelie
+      40.689655     Adelie
+      41.206897     Adelie
+      41.724138     Adelie
+      42.241379     Adelie
+      42.758621  Chinstrap
+      43.275862  Chinstrap
+      43.793103  Chinstrap
+      44.310345  Chinstrap
+      44.827586  Chinstrap
+      45.344828  Chinstrap
+      45.862069  Chinstrap
+      46.379310  Chinstrap
+      46.896552  Chinstrap
+      47.413793  Chinstrap
+      47.931034  Chinstrap
+      48.448276  Chinstrap
+      48.965517  Chinstrap
+      49.482759  Chinstrap
+      50.000000  Chinstrap
+2026-08-13 10:11:55 | INFO | M07 | ANALYST CHOICE: Where does the prediction shift and does that match your expectation?
+2026-08-13 10:12:14 | INFO | M07 | ANALYST CHOICE: What does the boundary shape tell you about the model?
+2026-08-13 10:12:14 | INFO | M07 | Edge case results:
+2026-08-13 10:12:14 | INFO | M07 |   missing feature        -> ERROR: 400 Client Error: Bad Request for url: https://ml-penguin-predictor.onrender.com/predict
+2026-08-13 10:12:14 | INFO | M07 |   extreme bill length    -> Adelie
+2026-08-13 10:12:14 | INFO | M07 |   very large bill        -> Chinstrap
+2026-08-13 10:12:15 | INFO | M07 |   negative value         -> Adelie
+2026-08-13 10:12:15 | INFO | M07 |   zero body mass         -> Adelie
+2026-08-13 10:12:15 | INFO | M07 | ANALYST CHOICE: Which edge cases were handled cleanly and which were not?
+2026-08-13 10:12:15 | INFO | M07 | ========================
+2026-08-13 10:12:15 | INFO | M07 | SUMMARY
+2026-08-13 10:12:15 | INFO | M07 | ========================
+2026-08-13 10:12:15 | INFO | M07 | API endpoint: https://ml-penguin-predictor.onrender.com/predict
+2026-08-13 10:12:15 | INFO | M07 | ========================
