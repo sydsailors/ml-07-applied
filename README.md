@@ -27,6 +27,8 @@ See [docs/your-files.md] for more.
 Links:
 
 - [ml_07_case.ipynb](notebooks/ml_07_case.ipynb)
+- [ml_07_sailors_p4.ipynb](notebooks/ml_07_sailors_p4.ipynb)
+- [ml_07_sailors_p5.ipynb](notebooks/ml_07_sailors_p5.ipynb)
 
 ## Working Files
 
@@ -188,9 +190,9 @@ Remove unnecessary instructional comments in your custom files.
 
 Update figures to present interesting results from your custom project:
 
-![Provide a Useful Caption](./docs/images/Figure_1.png)
+![bill_length_mm Predicted Species](../data/raw/predicted_species.png)
 
-![Provide a Useful Caption](./docs/images/Figure_2.png)
+![Prediction Grid](../data/raw/prediction_grid.png)
 
 ## Project Documentation
 
