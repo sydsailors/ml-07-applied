@@ -28,74 +28,61 @@ I made 2 small changes to the `bill_length_mm` feature sweep:
 - Narrowed the range from 30-60 mm to 35-50 mm
 
 These changes were made to examine the model's decision boundary more closely.
-The smaller range and additional test points could help make it easier to identify
+The smaller range and additional test points made it easier to identify
 where the prediction changed.
 
 The model predicted Adelie up to a bill length of 42.24 mm and then changed to Chinstrap
 at approximately 42.76 mm and remained Chinstrap for the rest of the tested range.
 
-This was an easy modification because it only required changing values in `np.linespace`.
+This was an easy modification because it only required changing values in `np.linspace`.
 
 ## Phase 5. Custom Project
 
 For Phase 5, I copied `ml_07_sailors_p4.ipynb` and renamed it `ml_07_sailors_p5.ipynb`.
 I kept the workflow while also testing `body_mass_g` and `flipper_length_mm`.
+`body_mass_g` and `flipper_length_mm` feature sweeps did not change the prediction
+from Adelie while the `bill_length_mm` feature sweep had the strongest influence for
+the Adelie baseline. This showed that the model was more sensitive to bill length when
+other features were held constant.
 
-- `body_mass_g` sweep
+![bill_length_mm Predicted Species](../data/raw/predicted_species.png)
 
-Describe your custom investigation of the deployed model.
-
-Be specific about what changed from the example project.
+![Prediction Grid](../data/raw/prediction_grid.png)
 
 ### Basis and API
 
-Describe the deployed model and API you started with.
-
-Include:
-
-- The example model and what it predicts
-- The API endpoint and what inputs it expects
-- Why you chose to keep or change the endpoint or model
+I used the deployed ML Penguin predictor, which predicts the penguin species `Adelie`,
+`Chinstrap`, and `Gentoo`. The API expects `bill_length_mm`, `bill_depth_mm`, `flipper_length_mm`,
+and `body_mass_g` as inputs. I decided to keep the original API to investigate the behavior of
+the existing deployed model rather than train a new one.
 
 ### Investigation Approach
 
-Describe how you investigated the model's behavior.
-
-Include:
-
-- Which features you varied and why
-- How you structured your tests (single feature, grid, edge cases)
-- What you were trying to learn about the model
+In addition to the original `bill_length_mm` sweep, I added custom sweeps for `body_mass_g` and
+`flipper_length_mm`. I also used the prediction grid and edge cases to see how the model
+responds to different combinations or unrealistic values.
 
 ### Findings: Feature Sensitivity
 
-Describe what you observed when varying individual features.
-
-Include:
-
-- Which features had the most influence on predictions
-- Where the decision boundary appeared to shift
-- Any surprising or counterintuitive results
+`bill_length_mm` had the clearest influence on the model's predictions. The prediction first
+shifted away from Adelie at approximately **42.76 mm**. The prediction stayed Chinstrap for the
+remainder of the range. I was surprised to see that changing `body_mass_g` from 2500-6000 grams
+and `flipper_length_mm` from 170-230 mm did not change the prediction when other Adelie
+baseline features were held constant. Since those sweeps continued to predict Adelie, it
+suggests that bill length had a stronger individual influence for this baseline.
 
 ### Findings: Edge Cases
 
-Describe what happened with unusual or invalid inputs.
-
-Include:
-
-- What edge cases you tested
-- How the API responded (prediction, error, or unexpected behavior)
-- What this tells you about the model's robustness
+I tested a missing feature, extremely small and large bill lengths, a negative bill length,
+and a zero body mass. The API was still able to produce predictions for these unrealistic
+measurements. This shows that additional input validation would help make the API more
+robust. This could prevent impossible measurements from being accepted.
 
 ### Summary
 
-Summarize your custom investigation.
-
-Include:
-
-- What you learned about the model's behavior
-- Where it appears confident and where it seems fragile
-- What you would change about the API contract or model
-- What kinds of real problems this approach could apply to
-
-Display at least one chart or screenshot showing your findings.
+This project showed that the model is more sensitive to some features than others. Bill
+length produced a clear decision boundary, while body mass and flipper length alone did not
+change the prediction from the Adelie baseline. I would improve the API by adding validation
+for impossible or unrealistic values such as negative measurements or zero body mass. This
+type of investigation could be applied to real-world models to identify important features and
+test decision boundaries.
